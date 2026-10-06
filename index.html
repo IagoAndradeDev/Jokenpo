@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Jokenpo</title>
 </head>
 <body>
-    <main class="cointainer">
+    <main class="container">
             <div class="titulo">
                 <h1>Jokenpo</h1>
+                <p>Jogue contra seu computador!</p>
             </div>
-            <div class="pedra">
-                <label>Pedra</label>
-                <button onclick="Jokenpo('Pedra')">Pedra</button>
-            </div>
-            <div class="papel">
-                <label>Papel</label>
-                <button onclick="Jokenpo('Papel')">Papel</button>
-            </div>
-            <div class="tesoura">
-                <label>Tesoura</label>
-                <button onclick="Jokenpo('Tesoura')">Tesoura</button>
+            <div class="escolhas">
+                <div class="pedra">
+                    <button onclick="Jokenpo('Pedra')">&#x1F44A;</button>
+                </div>
+                <div class="papel">
+                    <button onclick="Jokenpo('Papel')">&#x1f590;</button>
+                </div>
+                <div class="tesoura">
+                    <button onclick="Jokenpo('Tesoura')">&#x270c;</button>
+                </div>
             </div>
             <div class="resultado">
                 <h2>Resultado</h2>
                 <p></p>
-                <span class="vitoria">Vitorias:<strong>0</strong></span>
-                <span class="derrota">Derrotas:<strong>0</strong></span>
+                <div class="contador">
+                    <span class="vitoria">Vitorias:<strong>0</strong></span>
+                    <span class="derrota">Derrotas:<strong>0</strong></span>
+                </div>
             </div>
     </main>
 <script src="script.js"></script>

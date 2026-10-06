@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 40%;
+    height: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.titulo {
+    text-align: center;
+    padding: 10px;
+}
+
+.titulo h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #484848;
+}
+
+.titulo p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #656565;
+}
+
+.escolhas {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.escolhas button {
+    width: 140px;
+    height: 140px;
+    font-size: 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-property: box-shadow, transform;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24);
+}
+
+.escolhas button:is(:hover, :focus) {
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+}
+
+
+.resultado {
+    width: 450px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.resultado h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #484848;
+    padding: 5px;
+}
+
+.resultado p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #656565;
+    padding: 10px 0px;
+}
+
+.contador {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.contador span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #656565;
+}
