@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Jokenpo</title>
 </head>
 <body>
@@ -12,21 +13,23 @@
             </div>
             <div class="pedra">
                 <label>Pedra</label>
-                <button>Pedra</button>
+                <button onclick="Jokenpo('Pedra')">Pedra</button>
             </div>
             <div class="papel">
                 <label>Papel</label>
-                <button>Papel</button>
+                <button onclick="Jokenpo('Papel')">Papel</button>
             </div>
             <div class="tesoura">
                 <label>Tesoura</label>
-                <button>Tesoura</button>
+                <button onclick="Jokenpo('Tesoura')">Tesoura</button>
             </div>
             <div class="resultado">
                 <h2>Resultado</h2>
                 <p></p>
+                <span class="vitoria">Vitorias:<strong>0</strong></span>
+                <span class="derrota">Derrotas:<strong>0</strong></span>
             </div>
     </main>
-    
+<script src="script.js"></script>
 </body>
 </html>
