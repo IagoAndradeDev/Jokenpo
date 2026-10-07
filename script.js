@@ -6,10 +6,17 @@ const buttonTesoura = document.querySelector(".tesoura button")
 const strongVitoria = document.querySelector(".vitoria strong")
 const strongDerrota = document.querySelector(".derrota strong")
 
+
+const GAME_OPTION = {
+    Pedra: "Pedra",
+    Papel: "Papel",
+    Tesoura: "Tesoura"
+}
+
 const valorComputador = [
-    "Pedra", 
-    "Papel",
-    "Tesoura"
+    GAME_OPTION.Pedra, 
+    GAME_OPTION.Papel,
+    GAME_OPTION.Tesoura
 ]
 
 function pegarValor(list){
@@ -19,7 +26,7 @@ function pegarValor(list){
 
 function Jokenpo(Jogador, Computador = pegarValor(valorComputador)) {
     console.log(Computador)
-    if ((Jogador == "Pedra" && Computador == "Tesoura") || (Jogador == "Papel" && Computador == "Pedra") || (Jogador == "Tesoura" && Computador == "Papel")) {
+    if ((Jogador == GAME_OPTION.Pedra && Computador == GAME_OPTION.Tesoura) || (Jogador == GAME_OPTION.Papel && Computador == GAME_OPTION.Pedra) || (Jogador == GAME_OPTION.Tesoura && Computador == GAME_OPTION.Papel)) {
         resultado.innerHTML = "Jogador venceu!"
         strongVitoria.innerHTML = Number(strongVitoria.innerHTML) + 1
     } else if (Jogador == Computador) {
